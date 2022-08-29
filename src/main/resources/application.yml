@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Yswl.123
+    url: jdbc:mysql://47.108.171.211:3306/smart_dev?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&nullCatalogMeansCurrent=true
+
+# 打印sql
+logging:
+  config:
+    classpath:logback-dev.xml
+  level:
+    ssm.app.mapper: debug
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+    org.activiti.engine.impl.persistence.entity: trace
+
+#mybatis-plus配置控制台打印完整带参数SQL语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

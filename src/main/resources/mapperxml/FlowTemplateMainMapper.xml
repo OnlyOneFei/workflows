@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fy.workflows.mapper.FlowTemplateMainMapper">
+  <resultMap id="BaseResultMap" type="com.fy.workflows.model.FlowTemplateMain">
+    <!--@mbg.generated-->
+    <!--@Table flow_template_main-->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="workflow_key" jdbcType="VARCHAR" property="workflowKey" />
+    <result column="template_name" jdbcType="VARCHAR" property="templateName" />
+    <result column="template_state" jdbcType="TINYINT" property="templateState" />
+    <result column="del_flag" jdbcType="TINYINT" property="delFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, workflow_key, template_name, template_state, del_flag, create_time, update_time
+  </sql>
+</mapper>
